@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <LinearLayout
+        android:baselineAligned="false"
+        android:id="@+id/team_list_headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:id="@+id/team_list_name_layout"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/team_list_name"
+                android:text="@string/team_name"
+                style="@style/list_header_text_view"/>
+            <CheckBox
+                android:id="@+id/team_list_name_checkbox"
+                android:layout_toRightOf="@id/team_list_name"
+                android:layout_toEndOf="@id/team_list_name"
+                style="@style/list_header_check_box"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/team_list_owner_layout"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/team_list_owner"
+                android:text="@string/owner"
+                style="@style/list_header_text_view"/>
+            <CheckBox
+                android:id="@+id/team_list_owner_checkbox"
+                android:layout_toRightOf="@id/team_list_owner"
+                android:layout_toEndOf="@id/team_list_owner"
+                style="@style/list_header_check_box"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/team_list_value_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/team_list_value"
+                android:text="@string/value"
+                style="@style/list_header_text_view"/>
+            <CheckBox
+                android:id="@+id/team_list_value_checkbox"
+                android:layout_toRightOf="@id/team_list_value"
+                android:layout_toEndOf="@id/team_list_value"
+                style="@style/list_header_check_box"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/team_list_points_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/team_list_points"
+                android:text="@string/points"
+                style="@style/list_header_text_view"/>
+            <CheckBox
+                android:id="@+id/team_list_points_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/team_list_points"
+                android:layout_toEndOf="@id/team_list_points"
+                android:button="@drawable/ic_keyboard_arrow_down"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/team_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

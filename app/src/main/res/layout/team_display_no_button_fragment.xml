@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context=".view.MainActivity"
+    >
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            style="@style/medium_text"
+            android:textColor="@color/textPrimary"/>
+        <TextView
+            android:id="@+id/total_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            tools:text="20"
+            android:layout_weight="1"
+            style="@style/medium_text"
+            android:textColor="@color/textPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/this_week"
+            style="@style/medium_text"
+            android:textColor="@color/textPrimary"/>
+        <TextView
+            android:id="@+id/points_week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            tools:text="20"
+            style="@style/medium_text"
+            android:textColor="@color/textPrimary"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/pitch"
+        android:layout_below="@+id/info"
+        android:scaleType="fitStart"/>
+
+    <ImageView
+        android:id="@+id/bench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bench"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </View>
+
+        <RelativeLayout
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/goalkeeper"
+                    android:id="@+id/goal_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/goal_name"
+                    tools:text="Monk"
+                    style="@style/team_display_player_name_text_view"
+                    />
+
+                <TextView
+                    android:id="@+id/goal_score"
+                    tools:text="98"
+                    style="@style/team_display_player_points_text_view"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/main_def_linear_layout"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/main_mid_linear_layout"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/main_fwd_linear_layout"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="11"
+            android:layout_height="0dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/sub1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/shirt"
+                    android:id="@+id/sub1_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sub1_name"
+                    tools:text="Monk"
+                    style="@style/team_display_player_name_text_view"/>
+
+                <TextView
+                    android:id="@+id/sub1_score"
+                    tools:text="98"
+                    style="@style/team_display_player_points_text_view"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sub2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/shirt"
+                    android:id="@+id/sub2_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sub2_name"
+                    tools:text="Monk"
+                    style="@style/team_display_player_name_text_view"
+                    />
+
+                <TextView
+                    android:id="@+id/sub2_score"
+                    tools:text="98"
+                    style="@style/team_display_player_points_text_view"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sub3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/shirt"
+                    android:id="@+id/sub3_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sub3_name"
+                    tools:text="Monk"
+                    style="@style/team_display_player_name_text_view"/>
+
+                <TextView
+                    android:id="@+id/sub3_score"
+                    tools:text="98"
+                    style="@style/team_display_player_points_text_view"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sub4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/shirt"
+                    android:id="@+id/sub4_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sub4_name"
+                    tools:text="Monk"
+                    style="@style/team_display_player_name_text_view"
+                    />
+
+                <TextView
+                    android:id="@+id/sub4_score"
+                    style="@style/team_display_player_points_text_view"
+                    tools:text="98"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sub5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/shirt"
+                    android:id="@+id/sub5_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sub5_name"
+                    tools:text="Monk"
+                    style="@style/team_display_player_name_text_view"
+                    />
+
+                <TextView
+                    android:id="@+id/sub5_score"
+                    tools:text="98"
+                    style="@style/team_display_player_points_text_view"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </View>
+    </LinearLayout>
+</RelativeLayout>
