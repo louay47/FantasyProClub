@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.ligueprofantasy"
+        applicationId "com.fl.ligueprofantasy"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
@@ -31,4 +31,5 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
     implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
     implementation 'com.android.support:design:29'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

@@ -115,7 +115,13 @@
     <string name="editable_at">Team will be editable at</string>
     <string name="save_changes_by">Save Changes By</string>
 
+    <string name="empty_content_text">Nothing to show</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fixtures_list_item_result">%1$d : %2$d</string>
+    <string name="fixtures_list_item_header_today">Today</string>
+    <string name="fixtures_list_item_header_tomorrow">Tomorrow</string>
 
 </resources>

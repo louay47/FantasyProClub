@@ -13,4 +13,34 @@
     <color name="onClickButton">@color/colorPrimary</color>
     <color name="button">@color/colorPrimaryDark</color>
 
+    <color name="fixtures_matchday">#000</color>
+    <color name="fixtures_matchday_background_pressed">#EEE</color>
+    <color name="fixtures_list_background">@color/leagues_list_item_background</color>
+    <color name="fixtures_list_background_pressed">@color/leagues_list_item_background_pressed</color>
+    <color name="fixtures_list_item_header">#000</color>
+    <color name="fixtures_list_item_header_background">#F5F5F5</color>
+    <color name="fixtures_list_item_name">#555</color>
+    <color name="fixtures_list_item_win_name">#66BB6A</color>
+    <color name="fixtures_list_item_lose_name">#EF5350</color>
+    <color name="fixtures_list_item_draw_name">#29B6F6</color>
+    <color name="fixtures_list_item_result">#000</color>
+    <color name="fixtures_list_item_result_background">#C8E6C9</color>
+    <color name="fixtures_list_item_result_scheduled_background">#B3E5FC</color>
+
+    <color name="fixture_info_teams_text">#000</color>
+    <color name="fixture_info_teams_background">#FFF</color>
+    <color name="fixture_info_result_text">#FFF</color>
+    <color name="fixture_info_result_background">@color/colorPrimary</color>
+    <color name="fixture_info_head2head_text">@color/fixtures_list_item_header</color>
+
+    <color name="leagues_list_item_name">#000</color>
+    <color name="leagues_list_item_matchday">#555</color>
+    <color name="leagues_list_item_background">#FFF</color>
+    <color name="leagues_list_item_background_pressed">#FAFAFA</color>
+
+    <color name="window_background">#F5F5F5</color>
+    <color name="window_background_pressed">#E0E0E0</color>
+    <color name="alert_content">#BDBDBD</color>
+
+
 </resources>
